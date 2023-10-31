@@ -1,0 +1,36 @@
+# Вміст файлу .gitignore для проєкту C++
+# Компільовані файли та файли, які створюються під час збирання проєкту
+*.o
+*.out
+*.exe
+
+# Каталоги з тимчасовими файлами
+build/
+bin/
+Debug/
+Release/
+
+# Файли, що згенеровані IDE або редактором коду
+.vscode/
+.idea/
+*.suo
+*.user
+*.sln
+*.suo
+*.userprefs
+*.db
+*.db-shm
+*.db-wal
+
+# Файли конфігурації компілятора та середовища розробки
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+CMakeScripts/
+compile_commands.json
+Makefile
+
+# Файли журналів і лог-файли
+*.log
+*.log.*
