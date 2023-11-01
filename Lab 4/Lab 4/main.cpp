@@ -5,14 +5,44 @@ using namespace std;
 
 class Person {
 public:
-    Person(int id, const string& lastName, const string& firstName, const string& middleName, const string& address, const string& phone)
-        : id(id), lastName(lastName), firstName(firstName), middleName(middleName), address(address), phone(phone) {}
+    // Конструктор за замовчуванням
+    Person()
+        : id(0), lastName(""), firstName(""), middleName(""), address(""), phone(""), faculty(""), course(0), group("") {}
+
+    // Конструктор з параметрами
+    Person(int id, const string& lastName, const string& firstName, const string& middleName, const string& address, const string& phone, const string& faculty, int course, const string& group)
+        : id(id), lastName(lastName), firstName(firstName), middleName(middleName), address(address), phone(phone), faculty(faculty), course(course), group(group) {}
 
     void display() {
         cout << "ID: " << id << "\n";
         cout << "Name: " << lastName << " " << firstName << " " << middleName << "\n";
         cout << "Address: " << address << "\n";
         cout << "Phone: " << phone << "\n";
+        cout << "Faculty: " << faculty << "\n";
+        cout << "Course: " << course << "\n";
+        cout << "Group: " << group << "\n";
+    }
+
+    // Функція для введення даних з клавіатури
+    void inputFromKeyboard() {
+        cout << "Enter ID: ";
+        cin >> id;
+        cout << "Enter Last Name: ";
+        cin >> lastName;
+        cout << "Enter First Name: ";
+        cin >> firstName;
+        cout << "Enter Middle Name: ";
+        cin >> middleName;
+        cout << "Enter Address: ";
+        cin >> address;
+        cout << "Enter Phone: ";
+        cin >> phone;
+        cout << "Enter Faculty: ";
+        cin >> faculty;
+        cout << "Enter Course: ";
+        cin >> course;
+        cout << "Enter Group: ";
+        cin >> group;
     }
 
 protected:
@@ -22,30 +52,20 @@ protected:
     string middleName;
     string address;
     string phone;
-};
-
-class Student : public Person {
-public:
-    Student(int id, const string& lastName, const string& firstName, const string& middleName,
-        const string& address, const string& phone, const string& faculty, int course, const string& group)
-        : Person(id, lastName, firstName, middleName, address, phone), faculty(faculty), course(course), group(group) {}
-
-    void display() {
-        Person::display();
-        cout << "Faculty: " << faculty << "\n";
-        cout << "Course: " << course << "\n";
-        cout << "Group: " << group << "\n";
-    }
-
-private:
     string faculty;
     int course;
     string group;
 };
 
+class Student : public Person {
+public:
+    Student() = default;
+};
+
 int main() {
-    Student student(1, "Doe", "John", "Robert", "123 Main St", "555-1234", "Computer Science", 2, "CS101");
-    student.display();
+    Student student;
+    student.inputFromKeyboard(); // Викликаємо функцію введення даних з клавіатури
+    student.display(); // Виводимо дані студента
 
     return 0;
 }
