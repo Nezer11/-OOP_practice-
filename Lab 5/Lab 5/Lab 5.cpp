@@ -18,7 +18,11 @@ public:
     }
 
     void inputDetails() override {
+<<<<<<< HEAD
         cout << "Введіть деталі для DerivedClass1: ";
+=======
+        cout << "Введіть деталі для Реалізація 1: ";
+>>>>>>> PR6
         cin >> detail;
     }
 };
@@ -32,15 +36,24 @@ public:
     }
 
     void inputDetails() override {
+<<<<<<< HEAD
         cout << "Введіть деталі для DerivedClass2: ";
+=======
+        cout << "Введіть деталі для Реалізація 2: ";
+>>>>>>> PR6
         cin >> detail;
     }
 };
 
 void printMenu() {
     cout << "Меню:" << endl;
+<<<<<<< HEAD
     cout << "1. Створити об'єкт DerivedClass1" << endl;
     cout << "2. Створити об'єкт DerivedClass2" << endl;
+=======
+    cout << "1. Створити об'єкт Реалізація 1" << endl;
+    cout << "2. Створити об'єкт Реалізація 2" << endl;
+>>>>>>> PR6
     cout << "3. Вийти" << endl;
     cout << "Виберіть опцію: ";
 }
@@ -82,7 +95,11 @@ int main() {
     return 0;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 
 >>>>>>> PR5
+=======
+
+>>>>>>> PR6
