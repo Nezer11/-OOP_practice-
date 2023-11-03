@@ -18,7 +18,7 @@ public:
     }
 
     void inputDetails() override {
-        cout << "Введіть деталі для DerivedClass1: ";
+        cout << "Введіть деталі для Реалізація 1: ";
         cin >> detail;
     }
 };
@@ -32,15 +32,15 @@ public:
     }
 
     void inputDetails() override {
-        cout << "Введіть деталі для DerivedClass2: ";
+        cout << "Введіть деталі для Реалізація 2: ";
         cin >> detail;
     }
 };
 
 void printMenu() {
     cout << "Меню:" << endl;
-    cout << "1. Створити об'єкт DerivedClass1" << endl;
-    cout << "2. Створити об'єкт DerivedClass2" << endl;
+    cout << "1. Створити об'єкт Реалізація 1" << endl;
+    cout << "2. Створити об'єкт Реалізація 2" << endl;
     cout << "3. Вийти" << endl;
     cout << "Виберіть опцію: ";
 }
