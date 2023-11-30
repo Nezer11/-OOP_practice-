@@ -18,9 +18,9 @@ public:
     }
 
     void inputDetails() override {
-<<<<<<< HEAD
 
-=======
+
+
         cout << "Введіть деталі для Реалізація 1: ";
 >>>>>>> PR6
         cin >> detail;
@@ -36,8 +36,8 @@ public:
     }
 
     void inputDetails() override {
-<<<<<<< HEAD
-=======
+
+
         cout << "Введіть деталі для Реалізація 2: ";
 >>>>>>> PR6
         cin >> detail;
@@ -46,9 +46,9 @@ public:
 
 void printMenu() {
     cout << "Меню:" << endl;
-<<<<<<< HEAD
 
-=======
+
+
     cout << "1. Створити об'єкт Реалізація 1" << endl;
     cout << "2. Створити об'єкт Реалізація 2" << endl;
 >>>>>>> PR6
@@ -92,13 +92,9 @@ int main() {
 
     return 0;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> PR5
-=======
+
+
 >>>>>>> PR6
 =======
 
